@@ -107,7 +107,7 @@ class UserRegistrationViewTest(APITestCase):
         resulted_username_message = resulted_data["username"][0]
         resulted_email_message = resulted_data["email"][0]
 
-        expected_username_message = "A user with that username already exists."
+        expected_username_message = "user with this username already exists."
         expected_email_message = "This field must be unique."
 
         msg = (
